@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 121, y: -42.868}
-  m_SizeDelta: {x: 214.0169, y: 16.5151}
+  m_AnchoredPosition: {x: 71.00781, y: -33.257572}
+  m_SizeDelta: {x: 142.0169, y: 16.5151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &13256555
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use Spacebar (W) For Jump The Obstacles
+  m_text: Use (W) For Jump The Obstacles
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -664,8 +664,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -80, y: -45}
-  m_SizeDelta: {x: 415.1384, y: 20.7787}
+  m_AnchoredPosition: {x: -128.33063, y: -43.823185}
+  m_SizeDelta: {x: 256.66, y: 14.6046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611105345
 MonoBehaviour:
@@ -752,7 +752,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -4.7111588, z: 0.3317871, w: 0}
+  m_margin: {x: 0, y: 0.17389679, z: -1.1387024, w: 0.27290344}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1962,8 +1962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518ab07a9cbf91942ab18763c3a35387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
-  jumpForce: 400
+  Speed: 6.1
+  jumpForce: 700
 --- !u!50 &1763342353
 Rigidbody2D:
   serializedVersion: 4
@@ -1979,8 +1979,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 6
+  m_Material: {fileID: 6200000, guid: 064a54a85a2b65c479ef8fe57d00c7dc, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

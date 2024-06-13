@@ -388,7 +388,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 064a54a85a2b65c479ef8fe57d00c7dc, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -436,8 +436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518ab07a9cbf91942ab18763c3a35387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
-  jumpForce: 300
+  Speed: 6.1
+  jumpForce: 700
 --- !u!212 &188865061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3746,8 +3746,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1062979121}
-  - {fileID: 1354182263}
   - {fileID: 188865062}
+  - {fileID: 1354182263}
   - {fileID: 1480500520}
   - {fileID: 2056820381}
   - {fileID: 166353142}
