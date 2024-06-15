@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    PlayerController pc;
     private new Rigidbody2D rigidbody;
     public float Speed;
     private float axisHorizontal;
     public float jumpForce;
     private bool Grounded;
+    public GameObject oDeadPlayer;
+    Vector3 startPo;
 
     void Awake()
     {
@@ -18,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-
+        startPo = this.transform.position;
 
     }
 
@@ -39,6 +42,12 @@ public class PlayerController : MonoBehaviour
         {
             Grounded= false;
         }
+    }
+
+    public void ResetPosition()
+    {
+        this.transform.position = startPo;
+
     }
 
     private void FixedUpdate()

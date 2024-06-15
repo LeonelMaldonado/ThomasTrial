@@ -803,6 +803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 6.1
   jumpForce: 700
+  oDeadPlayer: {fileID: 0}
 --- !u!1 &433289010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,6 +2359,8 @@ GameObject:
   - component: {fileID: 1527134525}
   - component: {fileID: 1527134524}
   - component: {fileID: 1527134523}
+  - component: {fileID: 1527134527}
+  - component: {fileID: 1527134526}
   m_Layer: 0
   m_Name: Triangle (1)
   m_TagString: Untagged
@@ -2395,7 +2398,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2484,6 +2487,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1527134526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527134522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc9df251927e44f439fc6ed818d47e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1527134527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527134522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc9df251927e44f439fc6ed818d47e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1560160449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2734,6 +2761,8 @@ GameObject:
   - component: {fileID: 1768807538}
   - component: {fileID: 1768807537}
   - component: {fileID: 1768807536}
+  - component: {fileID: 1768807540}
+  - component: {fileID: 1768807539}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -2771,7 +2800,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2860,6 +2889,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1768807539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768807535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc9df251927e44f439fc6ed818d47e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1768807540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768807535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc9df251927e44f439fc6ed818d47e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2013590069
 GameObject:
   m_ObjectHideFlags: 0

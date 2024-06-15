@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 83167729}
   - component: {fileID: 83167728}
   - component: {fileID: 83167727}
+  - component: {fileID: 83167730}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -344,6 +345,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &83167730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83167726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &186266263
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,8 +471,8 @@ Transform:
   m_GameObject: {fileID: 186266263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.04, y: -1.17, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.04, y: -1.02, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -462,7 +507,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -491,7 +536,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 186266263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2eb8057fef50164bb33a0d30f678608, type: 3}
+  m_Script: {fileID: 11500000, guid: dc9df251927e44f439fc6ed818d47e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &219814541
@@ -1190,7 +1235,7 @@ Transform:
   m_GameObject: {fileID: 733574855}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5893, y: -3.61, z: 0}
+  m_LocalPosition: {x: 7.5893, y: -4, z: 0}
   m_LocalScale: {x: 2.6072657, y: 0.3972, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1478,8 +1523,8 @@ Transform:
   m_GameObject: {fileID: 806409395}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.32, y: -1.19, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.32, y: -1.02, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1514,7 +1559,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1543,7 +1588,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 806409395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2eb8057fef50164bb33a0d30f678608, type: 3}
+  m_Script: {fileID: 11500000, guid: dc9df251927e44f439fc6ed818d47e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1247363087
@@ -2944,6 +2989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 6.1
   jumpForce: 700
+  oDeadPlayer: {fileID: 0}
 --- !u!1 &1827832745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,7 +3179,7 @@ Transform:
   m_GameObject: {fileID: 1992728572}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.46, y: -3.63, z: -4.753584}
+  m_LocalPosition: {x: 7.46, y: -4, z: -4.753584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
