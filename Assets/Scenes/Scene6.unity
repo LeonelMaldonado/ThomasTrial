@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 23556334}
   - component: {fileID: 23556333}
   - component: {fileID: 23556335}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ramp 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1149, y: 1.1149, z: 1.1149}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 186266264}
   - component: {fileID: 186266266}
   - component: {fileID: 186266267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 257914925}
   - component: {fileID: 257914924}
   - component: {fileID: 257914926}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ramp Inicial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -754,6 +754,37 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!1 &327385743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 327385744}
+  m_Layer: 0
+  m_Name: pie1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &327385744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327385743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1787296419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &412131271
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,7 +796,7 @@ GameObject:
   - component: {fileID: 412131273}
   - component: {fileID: 412131272}
   - component: {fileID: 412131274}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ramp 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +929,7 @@ GameObject:
   - component: {fileID: 510408916}
   - component: {fileID: 510408915}
   - component: {fileID: 510408914}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor Complete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,7 +1062,7 @@ GameObject:
   - component: {fileID: 708543980}
   - component: {fileID: 708543979}
   - component: {fileID: 708543978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1165,7 +1196,7 @@ GameObject:
   - component: {fileID: 733574856}
   - component: {fileID: 733574858}
   - component: {fileID: 733574859}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ramp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1305,6 +1336,37 @@ MonoBehaviour:
   speed: 1
   ID: 0
   suma: 0
+--- !u!1 &737782204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737782205}
+  m_Layer: 0
+  m_Name: pie1 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &737782205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737782204}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.513, y: -0.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1787296419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779278755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,7 +1379,7 @@ GameObject:
   - component: {fileID: 779278756}
   - component: {fileID: 779278759}
   - component: {fileID: 779278758}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: coin 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1453,7 +1515,7 @@ GameObject:
   - component: {fileID: 806409396}
   - component: {fileID: 806409398}
   - component: {fileID: 806409399}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1602,7 +1664,7 @@ GameObject:
   - component: {fileID: 1247363090}
   - component: {fileID: 1247363089}
   - component: {fileID: 1247363088}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1733,7 +1795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1357621187}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PuntoD
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -1767,7 +1829,7 @@ GameObject:
   - component: {fileID: 1423150741}
   - component: {fileID: 1423150744}
   - component: {fileID: 1423150743}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: coin 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1902,7 +1964,7 @@ GameObject:
   - component: {fileID: 1445255717}
   - component: {fileID: 1445255716}
   - component: {fileID: 1445255715}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1970,7 +2032,7 @@ GameObject:
   - component: {fileID: 1477107626}
   - component: {fileID: 1477107625}
   - component: {fileID: 1477107627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor Secondary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2103,7 +2165,7 @@ GameObject:
   - component: {fileID: 1510515043}
   - component: {fileID: 1510515042}
   - component: {fileID: 1510515044}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor Principal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2234,7 +2296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1519630791}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PuntoC
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -2268,7 +2330,7 @@ GameObject:
   - component: {fileID: 1538490248}
   - component: {fileID: 1538490250}
   - component: {fileID: 1538490251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ramp 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2419,7 +2481,7 @@ GameObject:
   - component: {fileID: 1579792618}
   - component: {fileID: 1579792617}
   - component: {fileID: 1579792616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wall Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2553,7 +2615,7 @@ GameObject:
   - component: {fileID: 1584915334}
   - component: {fileID: 1584915337}
   - component: {fileID: 1584915336}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: coin 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2688,7 +2750,7 @@ GameObject:
   - component: {fileID: 1687934535}
   - component: {fileID: 1687934537}
   - component: {fileID: 1687934536}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2813,6 +2875,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687934534}
   m_CullTransparentMesh: 1
+--- !u!1 &1777106023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1777106024}
+  m_Layer: 0
+  m_Name: pie1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1777106024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777106023}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.521, y: -0.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1787296419}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1787296417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,7 +2992,10 @@ Transform:
   m_LocalPosition: {x: -8.33, y: -4.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1777106024}
+  - {fileID: 327385744}
+  - {fileID: 737782205}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1787296420
@@ -2974,7 +3070,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1787296422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2987,9 +3083,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518ab07a9cbf91942ab18763c3a35387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pc: {fileID: 1787296422}
+  pc2: {fileID: 1787296422}
   Speed: 6.1
   jumpForce: 700
-  oDeadPlayer: {fileID: 0}
+  distanceGround: 0.4
+  Grounded: 0
+  foot: {fileID: 1777106024}
+  foot1: {fileID: 327385744}
+  foot2: {fileID: 737782205}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &1827832745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,7 +3104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1827832746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PuntoB
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -3032,7 +3137,7 @@ GameObject:
   - component: {fileID: 1943035254}
   - component: {fileID: 1943035253}
   - component: {fileID: 1943035255}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3163,7 +3268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992728573}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PuntoA
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -3197,7 +3302,7 @@ GameObject:
   - component: {fileID: 2108612618}
   - component: {fileID: 2108612617}
   - component: {fileID: 2108612616}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

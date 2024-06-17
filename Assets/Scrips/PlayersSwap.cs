@@ -4,35 +4,42 @@ using UnityEngine;
 
 public class PlayersSwap : MonoBehaviour
 {
-    public PlayerController playerController;
-    public PlayerController player2Controller;
-    private bool player1Active = true;
+    public Control playerController;
+    public Control player2Controller;
+    private bool playerActive = true;
+
+    public bool chnYes = false;
     void Start()
     {
+        playerController.enabled = false;
+        player2Controller.enabled = true;
+
+        playerController.enabled = true;
+        player2Controller.enabled = false;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab) && chnYes == true)
         {
             SwitchPlayer();
         }
     }
     public void SwitchPlayer()
     {
-        if (player1Active)
+        if (playerActive)
         {
             playerController.enabled = false;
             player2Controller.enabled = true;
-            player1Active = false;
+            playerActive = false;
         }
         else
         {
             playerController.enabled = true;
             player2Controller.enabled = false;
-            player1Active = true;
+            playerActive = true;
         }
     }
 }

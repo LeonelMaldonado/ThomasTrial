@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Death : MonoBehaviour
+public class Death1 : MonoBehaviour
 {
-    PlayerController pc1;
+    Control pc;
     
     private void Start()
     {
-        pc1 = Object.FindFirstObjectByType<PlayerController>();
+        pc = Object.FindFirstObjectByType<Control>();
 
     }
 
@@ -16,7 +16,7 @@ public class Death : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            pc1.resetPosition();
+            pc.resetPosition();
         }
     }
  

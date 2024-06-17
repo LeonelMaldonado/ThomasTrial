@@ -1,24 +1,23 @@
+
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Control : MonoBehaviour
 {
-    public PlayerController pc;
-    public PlayerController pc2;
-    
-    private new Rigidbody2D rigidbody;
-    public float Speed;
-    private float axisHorizontal;
+    public Control pc;
+    public Control pc2;
+    public float speed;
+    public Rigidbody2D rb;
+    public float axisHorizontal;
     public float jumpForce;
 
-    Vector3 startPo;
-    Vector3 startPo1;
+    Vector3 iniPo;
+    Vector3 iniPo2;
 
     public float distanceGround;
-    public bool Grounded;
+    public bool isGround;
 
     public Transform foot;
     public Transform foot1;
@@ -26,20 +25,24 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundMask;
 
     //public GameObject oDeadPlayer;
+    //public AudioSource aSDeadPlayer;
 
 
-    void Awake()
+
+    private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
+    // Start is called before the first frame update
     void Start()
     {
-        startPo = pc.transform.position;
-        startPo1 = pc2.transform.position;
-
+        iniPo = pc.transform.position;
+        iniPo2 = pc2.transform.position;
+        //aSDeadPlayer = oDeadPlayer.GetComponent<AudioSource>();
     }
 
+    // Update is called once per frame
     void Update()
     {
         axisHorizontal = Input.GetAxis("Horizontal");
@@ -50,37 +53,49 @@ public class PlayerController : MonoBehaviour
 
         if (Physics2D.Raycast(foot.position, Vector2.down, distanceGround, groundMask) || Physics2D.Raycast(foot1.position, Vector2.down, distanceGround, groundMask) || Physics2D.Raycast(foot2.position, Vector2.down, distanceGround, groundMask))
         {
-            Grounded = true;
+            isGround = true;
         }
         else
         {
-            Grounded = false;
+            isGround = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && Grounded == true)
+        if (Input.GetKeyDown(KeyCode.W) && isGround == true)
         {
-            rigidbody.AddForce(Vector2.up * jumpForce);
+            rb.AddForce(Vector2.up * jumpForce);
         }
+
     }
 
     private void FixedUpdate()
     {
-        rigidbody.velocity = new Vector2(axisHorizontal * Speed, rigidbody.velocity.y);
+        rb.velocity = new Vector2(axisHorizontal * speed, rb.velocity.y);
     }
 
     public void resetPosition()
     {
         if (pc.enabled == true)
         {
-            pc.transform.position = startPo;
+            pc.transform.position = iniPo;
         }
         else
         {
-            pc2.transform.position = startPo1;
+            pc2.transform.position = iniPo2;
+        }
+
+        //aSDeadPlayer.Play();
+    }
+
+
+    private void cambio()
+    {
+
+        if (pc.enabled == true)
+        {
+
         }
 
     }
 
-    
 
 }
